@@ -46,11 +46,11 @@ main {
     margin: auto;
 }
 
-section {
-    margin-bottom: 2rem;
-    padding: 1rem;
+.content-section {
     background: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     animation: fadeIn 1s ease-in-out;
 }
