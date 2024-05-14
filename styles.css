@@ -1,12 +1,24 @@
-body {
-    font-family: 'Raleway', sans-serif;
+/* Ensure the body and html elements take up the full height */
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Ensure the main content takes up remaining space and pushes footer to the bottom */
+main {
+    flex: 1;
+    padding: 8rem 1rem 1rem;
+    max-width: 1200px;
+    margin: auto;
 }
 
 header {
@@ -58,13 +70,6 @@ nav ul li a.active,
 nav ul li a:hover {
     color: #ff6347;
     background: rgba(255, 99, 71, 0.1);
-}
-
-main {
-    flex: 1;
-    padding: 8rem 1rem 1rem;
-    max-width: 1200px;
-    margin: auto;
 }
 
 .content-section {
@@ -151,6 +156,7 @@ footer {
     padding: 1rem;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
+    flex-shrink: 0; /* Ensure the footer does not shrink */
 }
 
 @keyframes fadeIn {
